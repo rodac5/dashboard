@@ -1,0 +1,28 @@
+ng new dashboard
+
+cd dashboard
+ng version
+ng serve
+
+ng add @angular/material (se der algum problema, para tudo, roda npm install, e tenta novamente)
+ 2000  npm i highcharts-angular --save
+ 2001  npm i highcharts --save
+ 2005  npm i @angular/flex-layout @angular/cdk --save
+
+<button mat-raised-button color='primary'> TEST</button>
+
+ng g c layouts/default
+ng g m layouts/default
+2009  ng g c modules/dashboard
+
+
+
+const routes: Routes = [{
+  path: '',
+  component: DefaultComponent,
+  children: [{
+    path:'',
+    component: DashboardComponent
+  }]
+}];
+DEPOIS ATUALIZA O DEFAULT module e o DEFAULT component para jogar para a child
